@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const RecentTransactions = (props) => {
-    const[counter,setCount]=useState(props.transactions)
+    // const[counter,setCount]=useState(props.transactions)
   
 
 
@@ -17,7 +17,7 @@ const RecentTransactions = (props) => {
             </tr>
         </thead>
         <tbody>
-            {counter && counter?.map((el, index) => {
+            {props.transactions?.map((el, index) => {
                 return(
                     <tr key = {index}>
                         <td>{index + 1}</td>
